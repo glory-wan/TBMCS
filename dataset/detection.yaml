@@ -1,0 +1,31 @@
+# This is a sample directory structure for a multi-task learning dataset.
+# You can use one or more tasks to train your data (e.g., classification, detection, segmentation),
+# as *** is a highly flexible and decoupled multi-task learning model.
+#
+# Additionally, our data labeling format follows the ultralytics (commonly known as YOLO) format.
+# Of course, you can define your own data loading class in
+# mtl/dataset/custom_dataset_template.py to fit your labels and data.
+
+# A sample of directory structure
+#  ├── MTL_dataset
+#  └── data_root
+#      ├── images
+#      │   ├── train
+#      │   └── val
+#      └── labels
+#          ├── classification
+#          │      ├── cls_train.txt
+#          │      └── cls_val.txt
+#          ├── detection
+#          │      ├── dect_train.txt
+#          │      └── dect_val.txt
+#          └── segmentation
+#                 ├── seg_train.txt
+#                 └── seg_val.txt
+
+data_root: path/to/data/root
+
+names:
+  0: inside
+  1: middle
+  2: outside

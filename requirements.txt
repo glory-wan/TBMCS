@@ -1,0 +1,8 @@
+thop
+tqdm
+tensorboard
+matplotlib
+opencv-python
+pyyaml
+natsort
+scikit-learn
